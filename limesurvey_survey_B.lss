@@ -1,0 +1,3637 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+ <LimeSurveyDocType>Survey</LimeSurveyDocType>
+ <DBVersion>630</DBVersion>
+ <languages>
+  <language>en</language>
+ </languages>
+ <groups>
+  <fields>
+   <fieldname>gid</fieldname>
+   <fieldname>sid</fieldname>
+   <fieldname>group_order</fieldname>
+   <fieldname>randomization_group</fieldname>
+   <fieldname>grelevance</fieldname>
+  </fields>
+  <rows>
+   <row>
+    <gid><![CDATA[12]]></gid>
+    <sid><![CDATA[576394]]></sid>
+    <group_order><![CDATA[1]]></group_order>
+    <randomization_group/>
+    <grelevance/>
+   </row>
+   <row>
+    <gid><![CDATA[13]]></gid>
+    <sid><![CDATA[576394]]></sid>
+    <group_order><![CDATA[2]]></group_order>
+    <randomization_group/>
+    <grelevance/>
+   </row>
+  </rows>
+ </groups>
+ <group_l10ns>
+  <fields>
+   <fieldname>id</fieldname>
+   <fieldname>gid</fieldname>
+   <fieldname>group_name</fieldname>
+   <fieldname>description</fieldname>
+   <fieldname>language</fieldname>
+   <fieldname>sid</fieldname>
+   <fieldname>group_order</fieldname>
+   <fieldname>randomization_group</fieldname>
+   <fieldname>grelevance</fieldname>
+  </fields>
+  <rows>
+   <row>
+    <id><![CDATA[12]]></id>
+    <gid><![CDATA[12]]></gid>
+    <group_name><![CDATA[Sample 1B]]></group_name>
+    <description><![CDATA[<p data-end="517" data-start="214">You will now be presented with a code sample, followed by several questions about it.<br /><strong data-end="377" data-start="302">Please do not try to fully understand the entire code before answering.</strong><br />Instead, aim to answer each question as quickly as possible by analyzing only the parts of the code necessary for that specific question.</p>
+
+<p data-end="517" data-start="214"><strong>If you are unable to answer a question after a reasonable amount of time, feel free to enter "I don't know" and continue with the next question(s).</strong></p>
+
+<p data-end="827" data-start="519">You may modify the code in the editor. Your changes will persist <strong data-end="631" data-start="584">across all questions for the current sample</strong>.<br />However, the <strong data-end="691" data-start="648">edit history resets after each question</strong>, so you won’t be able to undo changes made in previous questions.<br />Make sure your code is in a good state before submitting an answer.</p>
+
+<div id="custom-timer" style="background-color: #e0ffe0; color: #333; width: 100%; padding: 10px 15px; font-weight: bold; border-radius: 5px; border: 1px solid #a0d8a0; display: inline-block; font-family: sans-serif;">Time spent analyzing the current sample: <span id="time-elapsed">00:00</span><br /><span id="timeMessage" style="display:none;">You have exceeded the recommended time for this sample. Please consider continuing with the next sample.</span></div>
+<script type="text/javascript">
+  // Retrieve the stored time from localStorage (or start from 0 if not present)
+  let elapsedTime = parseInt(localStorage.getItem('elapsedTime')) || 0;
+  const maxTime = 30 * 60; // 30 minutes in seconds
+
+  // Function to format the time as MM:SS
+  function formatTime(seconds) {
+    var minutes = Math.floor(seconds / 60);
+    var remainingSeconds = seconds % 60;
+
+    // Pad single digits with a leading zero for consistent formatting
+    if (minutes < 10) minutes = "0" + minutes;
+    if (remainingSeconds < 10) remainingSeconds = "0" + remainingSeconds;
+
+    return minutes + ":" + remainingSeconds;
+  }
+
+  // Update the timer display on the page
+  function updateTimerDisplay() {
+    elapsedTime = parseInt(localStorage.getItem('elapsedTime'));
+    const timerText = document.getElementById("time-elapsed");
+    const timerBox = document.getElementById("custom-timer");
+
+    // Display the formatted time
+    timerText.textContent = formatTime(elapsedTime);
+
+    // Change the background color to red after 30 minutes
+    if (elapsedTime >= maxTime) {
+      document.getElementById("timeMessage").style.display = "block";
+      timerBox.style.backgroundColor = "#ffe0e0"; // light red
+      timerBox.style.border = "1px solid #d88080"; // dark red border
+      timerBox.style.color = "#a00000"; // red text color
+    }
+  }
+
+  // Start the timer counting up
+  function startCountUp() {
+    updateTimerDisplay(); // Initially update the display
+    window.timerInterval = window.setInterval(function() {
+      elapsedTime++; // Increment the time
+      localStorage.setItem('elapsedTime', elapsedTime); // Save the updated time to localStorage
+      updateTimerDisplay(); // Update the display after incrementing
+    }, 1000); // Update every second
+  }
+</script>]]></description>
+    <language><![CDATA[en]]></language>
+    <sid><![CDATA[576394]]></sid>
+    <group_order><![CDATA[1]]></group_order>
+    <randomization_group/>
+    <grelevance/>
+   </row>
+   <row>
+    <id><![CDATA[13]]></id>
+    <gid><![CDATA[13]]></gid>
+    <group_name><![CDATA[Sample 2B]]></group_name>
+    <description><![CDATA[<p data-end="517" data-start="214">You will now be presented with a code sample, followed by several questions about it.<br /><strong data-end="377" data-start="302">Please do not try to fully understand the entire code before answering.</strong><br />Instead, aim to answer each question as quickly as possible by analyzing only the parts of the code necessary for that specific question.</p>
+
+<p data-end="517" data-start="214"><strong>If you are unable to answer a question after a reasonable amount of time, feel free to enter "I don't know" and continue with the next question(s).</strong></p>
+
+<p data-end="827" data-start="519">You may modify the code in the editor. Your changes will persist <strong data-end="631" data-start="584">across all questions for the current sample</strong>.<br />However, the <strong data-end="691" data-start="648">edit history resets after each question</strong>, so you won’t be able to undo changes made in previous questions.<br />Make sure your code is in a good state before submitting an answer.</p>
+
+<div id="custom-timer" style="background-color: #e0ffe0; color: #333; width: 100%; padding: 10px 15px; font-weight: bold; border-radius: 5px; border: 1px solid #a0d8a0; display: inline-block; font-family: sans-serif;">Time spent analyzing the current sample: <span id="time-elapsed">00:00</span><br /><span id="timeMessage" style="display:none;">You have exceeded the recommended time for this sample. Please consider continuing with the next sample.</span></div>
+<script type="text/javascript">
+  // Retrieve the stored time from localStorage (or start from 0 if not present)
+  let elapsedTime = parseInt(localStorage.getItem('elapsedTime')) || 0;
+  const maxTime = 30 * 60; // 30 minutes in seconds
+
+  // Function to format the time as MM:SS
+  function formatTime(seconds) {
+    var minutes = Math.floor(seconds / 60);
+    var remainingSeconds = seconds % 60;
+
+    // Pad single digits with a leading zero for consistent formatting
+    if (minutes < 10) minutes = "0" + minutes;
+    if (remainingSeconds < 10) remainingSeconds = "0" + remainingSeconds;
+
+    return minutes + ":" + remainingSeconds;
+  }
+
+  // Update the timer display on the page
+  function updateTimerDisplay() {
+    elapsedTime = parseInt(localStorage.getItem('elapsedTime'));
+    const timerText = document.getElementById("time-elapsed");
+    const timerBox = document.getElementById("custom-timer");
+
+    // Display the formatted time
+    timerText.textContent = formatTime(elapsedTime);
+
+    // Change the background color to red after 30 minutes
+    if (elapsedTime >= maxTime) {
+      document.getElementById("timeMessage").style.display = "block";
+      timerBox.style.backgroundColor = "#ffe0e0"; // light red
+      timerBox.style.border = "1px solid #d88080"; // dark red border
+      timerBox.style.color = "#a00000"; // red text color
+    }
+  }
+
+  // Start the timer counting up
+  function startCountUp() {
+    updateTimerDisplay(); // Initially update the display
+    window.timerInterval = window.setInterval(function() {
+      elapsedTime++; // Increment the time
+      localStorage.setItem('elapsedTime', elapsedTime); // Save the updated time to localStorage
+      updateTimerDisplay(); // Update the display after incrementing
+    }, 1000); // Update every second
+  }
+</script>]]></description>
+    <language><![CDATA[en]]></language>
+    <sid><![CDATA[576394]]></sid>
+    <group_order><![CDATA[2]]></group_order>
+    <randomization_group/>
+    <grelevance/>
+   </row>
+  </rows>
+ </group_l10ns>
+ <questions>
+  <fields>
+   <fieldname>qid</fieldname>
+   <fieldname>parent_qid</fieldname>
+   <fieldname>sid</fieldname>
+   <fieldname>gid</fieldname>
+   <fieldname>type</fieldname>
+   <fieldname>title</fieldname>
+   <fieldname>preg</fieldname>
+   <fieldname>other</fieldname>
+   <fieldname>mandatory</fieldname>
+   <fieldname>encrypted</fieldname>
+   <fieldname>question_order</fieldname>
+   <fieldname>scale_id</fieldname>
+   <fieldname>same_default</fieldname>
+   <fieldname>relevance</fieldname>
+   <fieldname>question_theme_name</fieldname>
+   <fieldname>modulename</fieldname>
+   <fieldname>same_script</fieldname>
+  </fields>
+  <rows>
+   <row>
+    <qid><![CDATA[59]]></qid>
+    <parent_qid><![CDATA[0]]></parent_qid>
+    <sid><![CDATA[576394]]></sid>
+    <gid><![CDATA[12]]></gid>
+    <type><![CDATA[X]]></type>
+    <title><![CDATA[S1Bcode]]></title>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <encrypted><![CDATA[N]]></encrypted>
+    <question_order><![CDATA[1]]></question_order>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <question_theme_name><![CDATA[boilerplate]]></question_theme_name>
+    <modulename/>
+    <same_script><![CDATA[0]]></same_script>
+   </row>
+   <row>
+    <qid><![CDATA[60]]></qid>
+    <parent_qid><![CDATA[0]]></parent_qid>
+    <sid><![CDATA[576394]]></sid>
+    <gid><![CDATA[12]]></gid>
+    <type><![CDATA[T]]></type>
+    <title><![CDATA[S1Bq1]]></title>
+    <preg/>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[Y]]></mandatory>
+    <encrypted><![CDATA[N]]></encrypted>
+    <question_order><![CDATA[2]]></question_order>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <question_theme_name><![CDATA[longfreetext]]></question_theme_name>
+    <modulename/>
+    <same_script><![CDATA[0]]></same_script>
+   </row>
+   <row>
+    <qid><![CDATA[61]]></qid>
+    <parent_qid><![CDATA[0]]></parent_qid>
+    <sid><![CDATA[576394]]></sid>
+    <gid><![CDATA[12]]></gid>
+    <type><![CDATA[T]]></type>
+    <title><![CDATA[S1Bq3]]></title>
+    <preg/>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[Y]]></mandatory>
+    <encrypted><![CDATA[N]]></encrypted>
+    <question_order><![CDATA[4]]></question_order>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <question_theme_name><![CDATA[longfreetext]]></question_theme_name>
+    <modulename/>
+    <same_script><![CDATA[0]]></same_script>
+   </row>
+   <row>
+    <qid><![CDATA[62]]></qid>
+    <parent_qid><![CDATA[0]]></parent_qid>
+    <sid><![CDATA[576394]]></sid>
+    <gid><![CDATA[12]]></gid>
+    <type><![CDATA[T]]></type>
+    <title><![CDATA[S1Bq2]]></title>
+    <preg/>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[Y]]></mandatory>
+    <encrypted><![CDATA[N]]></encrypted>
+    <question_order><![CDATA[3]]></question_order>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <question_theme_name><![CDATA[longfreetext]]></question_theme_name>
+    <modulename/>
+    <same_script><![CDATA[0]]></same_script>
+   </row>
+   <row>
+    <qid><![CDATA[63]]></qid>
+    <parent_qid><![CDATA[0]]></parent_qid>
+    <sid><![CDATA[576394]]></sid>
+    <gid><![CDATA[12]]></gid>
+    <type><![CDATA[T]]></type>
+    <title><![CDATA[S1Bq4]]></title>
+    <preg/>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[Y]]></mandatory>
+    <encrypted><![CDATA[N]]></encrypted>
+    <question_order><![CDATA[5]]></question_order>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <question_theme_name><![CDATA[longfreetext]]></question_theme_name>
+    <modulename/>
+    <same_script><![CDATA[0]]></same_script>
+   </row>
+   <row>
+    <qid><![CDATA[64]]></qid>
+    <parent_qid><![CDATA[0]]></parent_qid>
+    <sid><![CDATA[576394]]></sid>
+    <gid><![CDATA[13]]></gid>
+    <type><![CDATA[X]]></type>
+    <title><![CDATA[S2Bcode]]></title>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <encrypted><![CDATA[N]]></encrypted>
+    <question_order><![CDATA[1]]></question_order>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <question_theme_name><![CDATA[boilerplate]]></question_theme_name>
+    <modulename/>
+    <same_script><![CDATA[0]]></same_script>
+   </row>
+   <row>
+    <qid><![CDATA[65]]></qid>
+    <parent_qid><![CDATA[0]]></parent_qid>
+    <sid><![CDATA[576394]]></sid>
+    <gid><![CDATA[13]]></gid>
+    <type><![CDATA[T]]></type>
+    <title><![CDATA[S2Bq1]]></title>
+    <preg/>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[Y]]></mandatory>
+    <encrypted><![CDATA[N]]></encrypted>
+    <question_order><![CDATA[2]]></question_order>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <question_theme_name><![CDATA[longfreetext]]></question_theme_name>
+    <modulename/>
+    <same_script><![CDATA[0]]></same_script>
+   </row>
+   <row>
+    <qid><![CDATA[66]]></qid>
+    <parent_qid><![CDATA[0]]></parent_qid>
+    <sid><![CDATA[576394]]></sid>
+    <gid><![CDATA[13]]></gid>
+    <type><![CDATA[T]]></type>
+    <title><![CDATA[S2Bq2]]></title>
+    <preg/>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[Y]]></mandatory>
+    <encrypted><![CDATA[N]]></encrypted>
+    <question_order><![CDATA[3]]></question_order>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <question_theme_name><![CDATA[longfreetext]]></question_theme_name>
+    <modulename/>
+    <same_script><![CDATA[0]]></same_script>
+   </row>
+   <row>
+    <qid><![CDATA[67]]></qid>
+    <parent_qid><![CDATA[0]]></parent_qid>
+    <sid><![CDATA[576394]]></sid>
+    <gid><![CDATA[13]]></gid>
+    <type><![CDATA[T]]></type>
+    <title><![CDATA[S2Bq4]]></title>
+    <preg/>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[Y]]></mandatory>
+    <encrypted><![CDATA[N]]></encrypted>
+    <question_order><![CDATA[5]]></question_order>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <question_theme_name><![CDATA[longfreetext]]></question_theme_name>
+    <modulename/>
+    <same_script><![CDATA[0]]></same_script>
+   </row>
+   <row>
+    <qid><![CDATA[68]]></qid>
+    <parent_qid><![CDATA[0]]></parent_qid>
+    <sid><![CDATA[576394]]></sid>
+    <gid><![CDATA[13]]></gid>
+    <type><![CDATA[T]]></type>
+    <title><![CDATA[S2Bq3]]></title>
+    <preg/>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[Y]]></mandatory>
+    <encrypted><![CDATA[N]]></encrypted>
+    <question_order><![CDATA[4]]></question_order>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <question_theme_name><![CDATA[longfreetext]]></question_theme_name>
+    <modulename/>
+    <same_script><![CDATA[0]]></same_script>
+   </row>
+  </rows>
+ </questions>
+ <question_l10ns>
+  <fields>
+   <fieldname>id</fieldname>
+   <fieldname>qid</fieldname>
+   <fieldname>question</fieldname>
+   <fieldname>help</fieldname>
+   <fieldname>script</fieldname>
+   <fieldname>language</fieldname>
+  </fields>
+  <rows>
+   <row>
+    <id><![CDATA[59]]></id>
+    <qid><![CDATA[59]]></qid>
+    <question><![CDATA[<p><meta charset="UTF-8" /></p>
+
+<p data-end="455" data-start="145"><meta charset="UTF-8" /></p>
+
+<p data-end="517" data-start="214">If everything is clear, please continue.</p>
+]]></question>
+    <help><![CDATA[<script>
+      const storageKey = 'monaco_code_backup';
+      const defaultCode = `void fun(const unsigned char* input, int input_len, unsigned char* output) {
+    int var_1 = 0;
+    int var_2 = input_len / 2;
+LABEL_1:
+    if (var_1 > input_len){
+        goto LABEL_8;
+    }
+    unsigned char var_3 = input[var_2 % input_len];
+    int var_4 = 0;
+LABEL_2:
+    int var_5 = var_3 / 3;
+LABEL_3:
+    if (var_5 > 150){
+        goto LABEL_7;
+    }
+    if (var_5 < 60){
+        goto LABEL_4;
+    }
+    goto LABEL_6;
+LABEL_4:
+    int var_6 = 0;
+LABEL_5:
+    if (var_6 >= 3){
+        goto LABEL_2;
+    }
+    var_3 += input[(var_1 + var_6) % input_len];
+    var_6++;
+    goto LABEL_5;
+LABEL_6:
+    if (var_4 > 2){
+        goto LABEL_7;
+    }
+    foo(var_5);
+    var_4++;
+    var_3 -= input[var_1];
+    var_5 = var_3 / 2;
+    goto LABEL_3;
+LABEL_7:
+    var_3 = var_3 % 43 + 80;
+    if (var_1 % 2 == 0) {
+        output[var_1] = var_3 % 39 + 62;
+    }else{
+        output[var_1] = var_3;
+    }
+    var_2++;
+    var_1++;
+    goto LABEL_1;
+LABEL_8:
+    return;
+}
+`;
+      localStorage.setItem(storageKey, defaultCode);
+      window.clearInterval(window.timerInterval);
+      localStorage.setItem('elapsedTime', 0);
+      updateTimerDisplay();
+</script>]]></help>
+    <script/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <id><![CDATA[60]]></id>
+    <qid><![CDATA[60]]></qid>
+    <question><![CDATA[Ignoring the specific values in <em>input</em>, what is the valid ASCII value range of characters that <em>output</em> can contain after the function returned?]]></question>
+    <help><![CDATA[<style type="text/css">#editor {
+    min-height: 600px;
+    width: 100%;
+  }
+</style>
+<div id="editor"> </div>
+<!-- Load AMD loader first --><script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.39.0/min/vs/loader.js"></script><script>
+  // Wait for loader to be available
+  window.addEventListener('load', function () {
+    require.config({ paths: { 'vs': 'https://cdn.jsdelivr.net/npm/monaco-editor@0.39.0/min/vs' } });
+
+    require(['vs/editor/editor.main'], function () {
+      const storageKey = 'monaco_code_backup';
+
+      const editor = monaco.editor.create(document.getElementById('editor'), {
+        value: localStorage.getItem(storageKey),
+        language: 'cpp',
+        scrollBeyondLastLine: false,
+        automaticLayout: false
+      });
+      editor.onDidChangeModelContent(() => {
+        localStorage.setItem(storageKey, editor.getValue());
+      });
+    });
+  });
+  startCountUp() ;
+</script>
+
+<hr />
+<div>Your answer:</div>
+]]></help>
+    <script/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <id><![CDATA[61]]></id>
+    <qid><![CDATA[61]]></qid>
+    <question><![CDATA[What is the maximum number of times the function <em>foo</em> is invoked during program execution? Which values can the argument of <em>foo</em> have if the function is called? Explain why.]]></question>
+    <help><![CDATA[<style type="text/css">#editor {
+    min-height: 600px;
+    width: 100%;
+  }
+</style>
+<div id="editor"> </div>
+<!-- Load AMD loader first --><script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.39.0/min/vs/loader.js"></script><script>
+  // Wait for loader to be available
+  window.addEventListener('load', function () {
+    require.config({ paths: { 'vs': 'https://cdn.jsdelivr.net/npm/monaco-editor@0.39.0/min/vs' } });
+
+    require(['vs/editor/editor.main'], function () {
+      const storageKey = 'monaco_code_backup';
+
+      const editor = monaco.editor.create(document.getElementById('editor'), {
+        value: localStorage.getItem(storageKey),
+        language: 'cpp',
+        scrollBeyondLastLine: false,
+        automaticLayout: false
+      });
+      editor.onDidChangeModelContent(() => {
+        localStorage.setItem(storageKey, editor.getValue());
+      });
+    });
+  });
+  startCountUp() ;
+</script>
+
+<hr />
+<div>Your answer:</div>
+]]></help>
+    <script/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <id><![CDATA[62]]></id>
+    <qid><![CDATA[62]]></qid>
+    <question><![CDATA[Which <em>input</em> characters can potentially affect output[0]? Use this example to explain how the dependency works in general (for <em>output[n])</em>?]]></question>
+    <help><![CDATA[<style type="text/css">#editor {
+    min-height: 600px;
+    width: 100%;
+  }
+</style>
+<div id="editor"> </div>
+<!-- Load AMD loader first --><script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.39.0/min/vs/loader.js"></script><script>
+  // Wait for loader to be available
+  window.addEventListener('load', function () {
+    require.config({ paths: { 'vs': 'https://cdn.jsdelivr.net/npm/monaco-editor@0.39.0/min/vs' } });
+
+    require(['vs/editor/editor.main'], function () {
+      const storageKey = 'monaco_code_backup';
+
+      const editor = monaco.editor.create(document.getElementById('editor'), {
+        value: localStorage.getItem(storageKey),
+        language: 'cpp',
+        scrollBeyondLastLine: false,
+        automaticLayout: false
+      });
+      editor.onDidChangeModelContent(() => {
+        localStorage.setItem(storageKey, editor.getValue());
+      });
+    });
+  });
+  startCountUp() ;
+</script>
+
+<hr />
+<div>Your answer:</div>
+]]></help>
+    <script/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <id><![CDATA[63]]></id>
+    <qid><![CDATA[63]]></qid>
+    <question><![CDATA[Under the assumption that each character in the <em>input</em> contains only printable ASCII characters (ASCII codes 33 to 126), does the function always terminate? Explain why.]]></question>
+    <help><![CDATA[<style type="text/css">#editor {
+    min-height: 600px;
+    width: 100%;
+  }
+</style>
+<div id="editor"> </div>
+<!-- Load AMD loader first --><script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.39.0/min/vs/loader.js"></script><script>
+  // Wait for loader to be available
+  window.addEventListener('load', function () {
+    require.config({ paths: { 'vs': 'https://cdn.jsdelivr.net/npm/monaco-editor@0.39.0/min/vs' } });
+
+    require(['vs/editor/editor.main'], function () {
+      const storageKey = 'monaco_code_backup';
+
+      const editor = monaco.editor.create(document.getElementById('editor'), {
+        value: localStorage.getItem(storageKey),
+        language: 'cpp',
+        scrollBeyondLastLine: false,
+        automaticLayout: false
+      });
+      editor.onDidChangeModelContent(() => {
+        localStorage.setItem(storageKey, editor.getValue());
+      });
+    });
+  });
+  startCountUp() ;
+</script>
+
+<hr />
+<div>Your answer:</div>
+]]></help>
+    <script/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <id><![CDATA[64]]></id>
+    <qid><![CDATA[64]]></qid>
+    <question><![CDATA[<p><meta charset="UTF-8" /></p>
+
+<p data-end="455" data-start="145"><meta charset="UTF-8" /></p>
+
+<p data-end="517" data-start="214">If everything is clear, please continue.</p>
+]]></question>
+    <help><![CDATA[<script>
+      const storageKey = 'monaco_code_backup';
+      const defaultCode = `#include <stdbool.h>
+int fun(unsigned char *input, int input_len, unsigned char *output, int output_len) {
+    if(input_len < 1){
+        return -1;
+    }
+    int var_1 = 0;
+    unsigned int var_2 = 0;
+    unsigned char var_3 = 0;
+    unsigned char var_5;
+    do {
+        int var_6 = var_1;
+        if(var_6 >= input_len){
+            printf("X");
+            var_3 = var_6 % (2 * input_len);
+            if(var_3 < input_len){
+                var_6 = var_3;
+            }else{
+                var_6 = var_3 - input_len;
+            }
+        }
+        var_5 = input[var_6];
+        if (var_5 % 2 == 0) {
+            var_5 /= 2;
+        } else {
+            var_5 += 1;
+        }
+        while (var_6 < input_len) {
+            var_5 += input[var_6];
+            var_6 += output_len;
+            if (var_5 > 256) {
+                var_5 /= 2;
+            } else {
+                var_5 += 1;
+            }
+        }
+        output[var_1] = var_5 % 256;
+        int var_8 = false;
+        if (output[var_1] > 100) {
+            output[var_1] /= 2;
+            if (output[var_1] > 30) {
+                output[var_1] -= 15;
+                if (output[var_1] == 40) {
+                    output[var_1] -= 5;
+                }else{
+                    var_8 = true;
+                }
+            }else{
+                var_8 = true;
+            }
+        }else{
+            var_8 = true;
+        }
+        if (var_8) {
+            output[var_1] = ( output[var_1] + var_5 ) % 74 + 48;
+        }
+        var_1++;
+    } while (var_1 < 8);
+
+    return 0;
+}
+`;
+      localStorage.setItem(storageKey, defaultCode);
+      window.clearInterval(window.timerInterval);
+      localStorage.setItem('elapsedTime', 0);
+      updateTimerDisplay();
+</script>]]></help>
+    <script/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <id><![CDATA[65]]></id>
+    <qid><![CDATA[65]]></qid>
+    <question><![CDATA[Ignoring the specific values in <em>input</em>, what is the valid ASCII value range of characters that <em>output</em> can contain after the function returned <em>0</em>?]]></question>
+    <help><![CDATA[<style type="text/css">#editor {
+    min-height: 600px;
+    width: 100%;
+  }
+</style>
+<div id="editor"> </div>
+<!-- Load AMD loader first --><script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.39.0/min/vs/loader.js"></script><script>
+  // Wait for loader to be available
+  window.addEventListener('load', function () {
+    require.config({ paths: { 'vs': 'https://cdn.jsdelivr.net/npm/monaco-editor@0.39.0/min/vs' } });
+
+    require(['vs/editor/editor.main'], function () {
+      const storageKey = 'monaco_code_backup';
+
+      const editor = monaco.editor.create(document.getElementById('editor'), {
+        value: localStorage.getItem(storageKey),
+        language: 'cpp',
+        scrollBeyondLastLine: false,
+        automaticLayout: false
+      });
+      editor.onDidChangeModelContent(() => {
+        localStorage.setItem(storageKey, editor.getValue());
+      });
+    });
+  });
+  startCountUp() ;
+</script>
+
+<hr />
+<div>Your answer:</div>
+]]></help>
+    <script/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <id><![CDATA[66]]></id>
+    <qid><![CDATA[66]]></qid>
+    <question><![CDATA[Assuming the function was executed with <em>input_len</em>=L, how many characters are written to <em>output</em>? <em>output_len</em> is no valid answer.]]></question>
+    <help><![CDATA[<style type="text/css">#editor {
+    min-height: 600px;
+    width: 100%;
+  }
+</style>
+<div id="editor"> </div>
+<!-- Load AMD loader first --><script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.39.0/min/vs/loader.js"></script><script>
+  // Wait for loader to be available
+  window.addEventListener('load', function () {
+    require.config({ paths: { 'vs': 'https://cdn.jsdelivr.net/npm/monaco-editor@0.39.0/min/vs' } });
+
+    require(['vs/editor/editor.main'], function () {
+      const storageKey = 'monaco_code_backup';
+
+      const editor = monaco.editor.create(document.getElementById('editor'), {
+        value: localStorage.getItem(storageKey),
+        language: 'cpp',
+        scrollBeyondLastLine: false,
+        automaticLayout: false
+      });
+      editor.onDidChangeModelContent(() => {
+        localStorage.setItem(storageKey, editor.getValue());
+      });
+    });
+  });
+  startCountUp() ;
+</script>
+
+<hr />
+<div>Your answer:</div>
+]]></help>
+    <script/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <id><![CDATA[67]]></id>
+    <qid><![CDATA[67]]></qid>
+    <question><![CDATA[Under what conditions involving <em>input</em> and <em>input_len</em> is the character <em>'X'</em> printed? Additionally, what is the maximum number of times <em>'X'</em> can be printed? Explain why.]]></question>
+    <help><![CDATA[<style type="text/css">#editor {
+    min-height: 600px;
+    width: 100%;
+  }
+</style>
+<div id="editor"> </div>
+<!-- Load AMD loader first --><script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.39.0/min/vs/loader.js"></script><script>
+  // Wait for loader to be available
+  window.addEventListener('load', function () {
+    require.config({ paths: { 'vs': 'https://cdn.jsdelivr.net/npm/monaco-editor@0.39.0/min/vs' } });
+
+    require(['vs/editor/editor.main'], function () {
+      const storageKey = 'monaco_code_backup';
+
+      const editor = monaco.editor.create(document.getElementById('editor'), {
+        value: localStorage.getItem(storageKey),
+        language: 'cpp',
+        scrollBeyondLastLine: false,
+        automaticLayout: false
+      });
+      editor.onDidChangeModelContent(() => {
+        localStorage.setItem(storageKey, editor.getValue());
+      });
+    });
+  });
+  startCountUp() ;
+</script>
+
+<hr />
+<div>Your answer:</div>
+]]></help>
+    <script/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <id><![CDATA[68]]></id>
+    <qid><![CDATA[68]]></qid>
+    <question><![CDATA[Which <em>input</em> characters can potentially affect output[0]? Use this example to explain how the dependency works in general (for <em>output[n])</em>?]]></question>
+    <help><![CDATA[<style type="text/css">#editor {
+    min-height: 600px;
+    width: 100%;
+  }
+</style>
+<div id="editor"> </div>
+<!-- Load AMD loader first --><script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.39.0/min/vs/loader.js"></script><script>
+  // Wait for loader to be available
+  window.addEventListener('load', function () {
+    require.config({ paths: { 'vs': 'https://cdn.jsdelivr.net/npm/monaco-editor@0.39.0/min/vs' } });
+
+    require(['vs/editor/editor.main'], function () {
+      const storageKey = 'monaco_code_backup';
+
+      const editor = monaco.editor.create(document.getElementById('editor'), {
+        value: localStorage.getItem(storageKey),
+        language: 'cpp',
+        scrollBeyondLastLine: false,
+        automaticLayout: false
+      });
+      editor.onDidChangeModelContent(() => {
+        localStorage.setItem(storageKey, editor.getValue());
+      });
+    });
+  });
+  startCountUp() ;
+</script>
+
+<hr />
+<div>Your answer:</div>
+]]></help>
+    <script/>
+    <language><![CDATA[en]]></language>
+   </row>
+  </rows>
+ </question_l10ns>
+ <question_attributes>
+  <fields>
+   <fieldname>qid</fieldname>
+   <fieldname>attribute</fieldname>
+   <fieldname>value</fieldname>
+   <fieldname>language</fieldname>
+  </fields>
+  <rows>
+   <row>
+    <qid><![CDATA[59]]></qid>
+    <attribute><![CDATA[cssclass]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[59]]></qid>
+    <attribute><![CDATA[hidden]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[59]]></qid>
+    <attribute><![CDATA[hide_tip]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[59]]></qid>
+    <attribute><![CDATA[page_break]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[59]]></qid>
+    <attribute><![CDATA[random_group]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[59]]></qid>
+    <attribute><![CDATA[save_as_default]]></attribute>
+    <value><![CDATA[N]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[59]]></qid>
+    <attribute><![CDATA[statistics_graphtype]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[59]]></qid>
+    <attribute><![CDATA[statistics_showgraph]]></attribute>
+    <value><![CDATA[1]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[59]]></qid>
+    <attribute><![CDATA[time_limit]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[59]]></qid>
+    <attribute><![CDATA[time_limit_action]]></attribute>
+    <value><![CDATA[3]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[59]]></qid>
+    <attribute><![CDATA[time_limit_countdown_message]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[59]]></qid>
+    <attribute><![CDATA[time_limit_disable_next]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[59]]></qid>
+    <attribute><![CDATA[time_limit_disable_prev]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[59]]></qid>
+    <attribute><![CDATA[time_limit_message]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[59]]></qid>
+    <attribute><![CDATA[time_limit_message_delay]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[59]]></qid>
+    <attribute><![CDATA[time_limit_message_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[59]]></qid>
+    <attribute><![CDATA[time_limit_timer_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[59]]></qid>
+    <attribute><![CDATA[time_limit_warning]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[59]]></qid>
+    <attribute><![CDATA[time_limit_warning_2]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[59]]></qid>
+    <attribute><![CDATA[time_limit_warning_2_display_time]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[59]]></qid>
+    <attribute><![CDATA[time_limit_warning_2_message]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[59]]></qid>
+    <attribute><![CDATA[time_limit_warning_2_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[59]]></qid>
+    <attribute><![CDATA[time_limit_warning_display_time]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[59]]></qid>
+    <attribute><![CDATA[time_limit_warning_message]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[59]]></qid>
+    <attribute><![CDATA[time_limit_warning_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[60]]></qid>
+    <attribute><![CDATA[cssclass]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[60]]></qid>
+    <attribute><![CDATA[display_rows]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[60]]></qid>
+    <attribute><![CDATA[em_validation_q]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[60]]></qid>
+    <attribute><![CDATA[em_validation_q_tip]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[60]]></qid>
+    <attribute><![CDATA[hidden]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[60]]></qid>
+    <attribute><![CDATA[hide_tip]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[60]]></qid>
+    <attribute><![CDATA[input_size]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[60]]></qid>
+    <attribute><![CDATA[location_city]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[60]]></qid>
+    <attribute><![CDATA[location_country]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[60]]></qid>
+    <attribute><![CDATA[location_defaultcoordinates]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[60]]></qid>
+    <attribute><![CDATA[location_mapheight]]></attribute>
+    <value><![CDATA[300]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[60]]></qid>
+    <attribute><![CDATA[location_mapservice]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[60]]></qid>
+    <attribute><![CDATA[location_mapwidth]]></attribute>
+    <value><![CDATA[500]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[60]]></qid>
+    <attribute><![CDATA[location_mapzoom]]></attribute>
+    <value><![CDATA[11]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[60]]></qid>
+    <attribute><![CDATA[location_nodefaultfromip]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[60]]></qid>
+    <attribute><![CDATA[location_postal]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[60]]></qid>
+    <attribute><![CDATA[location_state]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[60]]></qid>
+    <attribute><![CDATA[maximum_chars]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[60]]></qid>
+    <attribute><![CDATA[numbers_only]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[60]]></qid>
+    <attribute><![CDATA[page_break]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[60]]></qid>
+    <attribute><![CDATA[prefix]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[60]]></qid>
+    <attribute><![CDATA[random_group]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[60]]></qid>
+    <attribute><![CDATA[save_as_default]]></attribute>
+    <value><![CDATA[N]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[60]]></qid>
+    <attribute><![CDATA[statistics_graphtype]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[60]]></qid>
+    <attribute><![CDATA[statistics_showgraph]]></attribute>
+    <value><![CDATA[1]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[60]]></qid>
+    <attribute><![CDATA[statistics_showmap]]></attribute>
+    <value><![CDATA[1]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[60]]></qid>
+    <attribute><![CDATA[suffix]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[60]]></qid>
+    <attribute><![CDATA[text_input_width]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[60]]></qid>
+    <attribute><![CDATA[time_limit]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[60]]></qid>
+    <attribute><![CDATA[time_limit_action]]></attribute>
+    <value><![CDATA[1]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[60]]></qid>
+    <attribute><![CDATA[time_limit_countdown_message]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[60]]></qid>
+    <attribute><![CDATA[time_limit_disable_next]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[60]]></qid>
+    <attribute><![CDATA[time_limit_disable_prev]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[60]]></qid>
+    <attribute><![CDATA[time_limit_message]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[60]]></qid>
+    <attribute><![CDATA[time_limit_message_delay]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[60]]></qid>
+    <attribute><![CDATA[time_limit_message_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[60]]></qid>
+    <attribute><![CDATA[time_limit_timer_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[60]]></qid>
+    <attribute><![CDATA[time_limit_warning]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[60]]></qid>
+    <attribute><![CDATA[time_limit_warning_2]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[60]]></qid>
+    <attribute><![CDATA[time_limit_warning_2_display_time]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[60]]></qid>
+    <attribute><![CDATA[time_limit_warning_2_message]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[60]]></qid>
+    <attribute><![CDATA[time_limit_warning_2_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[60]]></qid>
+    <attribute><![CDATA[time_limit_warning_display_time]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[60]]></qid>
+    <attribute><![CDATA[time_limit_warning_message]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[60]]></qid>
+    <attribute><![CDATA[time_limit_warning_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[61]]></qid>
+    <attribute><![CDATA[cssclass]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[61]]></qid>
+    <attribute><![CDATA[display_rows]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[61]]></qid>
+    <attribute><![CDATA[em_validation_q]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[61]]></qid>
+    <attribute><![CDATA[em_validation_q_tip]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[61]]></qid>
+    <attribute><![CDATA[hidden]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[61]]></qid>
+    <attribute><![CDATA[hide_tip]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[61]]></qid>
+    <attribute><![CDATA[input_size]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[61]]></qid>
+    <attribute><![CDATA[location_city]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[61]]></qid>
+    <attribute><![CDATA[location_country]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[61]]></qid>
+    <attribute><![CDATA[location_defaultcoordinates]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[61]]></qid>
+    <attribute><![CDATA[location_mapheight]]></attribute>
+    <value><![CDATA[300]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[61]]></qid>
+    <attribute><![CDATA[location_mapservice]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[61]]></qid>
+    <attribute><![CDATA[location_mapwidth]]></attribute>
+    <value><![CDATA[500]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[61]]></qid>
+    <attribute><![CDATA[location_mapzoom]]></attribute>
+    <value><![CDATA[11]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[61]]></qid>
+    <attribute><![CDATA[location_nodefaultfromip]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[61]]></qid>
+    <attribute><![CDATA[location_postal]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[61]]></qid>
+    <attribute><![CDATA[location_state]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[61]]></qid>
+    <attribute><![CDATA[maximum_chars]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[61]]></qid>
+    <attribute><![CDATA[numbers_only]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[61]]></qid>
+    <attribute><![CDATA[page_break]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[61]]></qid>
+    <attribute><![CDATA[prefix]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[61]]></qid>
+    <attribute><![CDATA[random_group]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[61]]></qid>
+    <attribute><![CDATA[save_as_default]]></attribute>
+    <value><![CDATA[N]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[61]]></qid>
+    <attribute><![CDATA[statistics_graphtype]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[61]]></qid>
+    <attribute><![CDATA[statistics_showgraph]]></attribute>
+    <value><![CDATA[1]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[61]]></qid>
+    <attribute><![CDATA[statistics_showmap]]></attribute>
+    <value><![CDATA[1]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[61]]></qid>
+    <attribute><![CDATA[suffix]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[61]]></qid>
+    <attribute><![CDATA[text_input_width]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[61]]></qid>
+    <attribute><![CDATA[time_limit]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[61]]></qid>
+    <attribute><![CDATA[time_limit_action]]></attribute>
+    <value><![CDATA[1]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[61]]></qid>
+    <attribute><![CDATA[time_limit_countdown_message]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[61]]></qid>
+    <attribute><![CDATA[time_limit_disable_next]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[61]]></qid>
+    <attribute><![CDATA[time_limit_disable_prev]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[61]]></qid>
+    <attribute><![CDATA[time_limit_message]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[61]]></qid>
+    <attribute><![CDATA[time_limit_message_delay]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[61]]></qid>
+    <attribute><![CDATA[time_limit_message_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[61]]></qid>
+    <attribute><![CDATA[time_limit_timer_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[61]]></qid>
+    <attribute><![CDATA[time_limit_warning]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[61]]></qid>
+    <attribute><![CDATA[time_limit_warning_2]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[61]]></qid>
+    <attribute><![CDATA[time_limit_warning_2_display_time]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[61]]></qid>
+    <attribute><![CDATA[time_limit_warning_2_message]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[61]]></qid>
+    <attribute><![CDATA[time_limit_warning_2_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[61]]></qid>
+    <attribute><![CDATA[time_limit_warning_display_time]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[61]]></qid>
+    <attribute><![CDATA[time_limit_warning_message]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[61]]></qid>
+    <attribute><![CDATA[time_limit_warning_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[62]]></qid>
+    <attribute><![CDATA[cssclass]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[62]]></qid>
+    <attribute><![CDATA[display_rows]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[62]]></qid>
+    <attribute><![CDATA[em_validation_q]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[62]]></qid>
+    <attribute><![CDATA[em_validation_q_tip]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[62]]></qid>
+    <attribute><![CDATA[hidden]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[62]]></qid>
+    <attribute><![CDATA[hide_tip]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[62]]></qid>
+    <attribute><![CDATA[input_size]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[62]]></qid>
+    <attribute><![CDATA[location_city]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[62]]></qid>
+    <attribute><![CDATA[location_country]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[62]]></qid>
+    <attribute><![CDATA[location_defaultcoordinates]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[62]]></qid>
+    <attribute><![CDATA[location_mapheight]]></attribute>
+    <value><![CDATA[300]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[62]]></qid>
+    <attribute><![CDATA[location_mapservice]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[62]]></qid>
+    <attribute><![CDATA[location_mapwidth]]></attribute>
+    <value><![CDATA[500]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[62]]></qid>
+    <attribute><![CDATA[location_mapzoom]]></attribute>
+    <value><![CDATA[11]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[62]]></qid>
+    <attribute><![CDATA[location_nodefaultfromip]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[62]]></qid>
+    <attribute><![CDATA[location_postal]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[62]]></qid>
+    <attribute><![CDATA[location_state]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[62]]></qid>
+    <attribute><![CDATA[maximum_chars]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[62]]></qid>
+    <attribute><![CDATA[numbers_only]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[62]]></qid>
+    <attribute><![CDATA[page_break]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[62]]></qid>
+    <attribute><![CDATA[prefix]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[62]]></qid>
+    <attribute><![CDATA[random_group]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[62]]></qid>
+    <attribute><![CDATA[save_as_default]]></attribute>
+    <value><![CDATA[N]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[62]]></qid>
+    <attribute><![CDATA[statistics_graphtype]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[62]]></qid>
+    <attribute><![CDATA[statistics_showgraph]]></attribute>
+    <value><![CDATA[1]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[62]]></qid>
+    <attribute><![CDATA[statistics_showmap]]></attribute>
+    <value><![CDATA[1]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[62]]></qid>
+    <attribute><![CDATA[suffix]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[62]]></qid>
+    <attribute><![CDATA[text_input_width]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[62]]></qid>
+    <attribute><![CDATA[time_limit]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[62]]></qid>
+    <attribute><![CDATA[time_limit_action]]></attribute>
+    <value><![CDATA[1]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[62]]></qid>
+    <attribute><![CDATA[time_limit_countdown_message]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[62]]></qid>
+    <attribute><![CDATA[time_limit_disable_next]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[62]]></qid>
+    <attribute><![CDATA[time_limit_disable_prev]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[62]]></qid>
+    <attribute><![CDATA[time_limit_message]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[62]]></qid>
+    <attribute><![CDATA[time_limit_message_delay]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[62]]></qid>
+    <attribute><![CDATA[time_limit_message_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[62]]></qid>
+    <attribute><![CDATA[time_limit_timer_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[62]]></qid>
+    <attribute><![CDATA[time_limit_warning]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[62]]></qid>
+    <attribute><![CDATA[time_limit_warning_2]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[62]]></qid>
+    <attribute><![CDATA[time_limit_warning_2_display_time]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[62]]></qid>
+    <attribute><![CDATA[time_limit_warning_2_message]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[62]]></qid>
+    <attribute><![CDATA[time_limit_warning_2_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[62]]></qid>
+    <attribute><![CDATA[time_limit_warning_display_time]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[62]]></qid>
+    <attribute><![CDATA[time_limit_warning_message]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[62]]></qid>
+    <attribute><![CDATA[time_limit_warning_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[63]]></qid>
+    <attribute><![CDATA[cssclass]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[63]]></qid>
+    <attribute><![CDATA[display_rows]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[63]]></qid>
+    <attribute><![CDATA[em_validation_q]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[63]]></qid>
+    <attribute><![CDATA[em_validation_q_tip]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[63]]></qid>
+    <attribute><![CDATA[hidden]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[63]]></qid>
+    <attribute><![CDATA[hide_tip]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[63]]></qid>
+    <attribute><![CDATA[input_size]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[63]]></qid>
+    <attribute><![CDATA[location_city]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[63]]></qid>
+    <attribute><![CDATA[location_country]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[63]]></qid>
+    <attribute><![CDATA[location_defaultcoordinates]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[63]]></qid>
+    <attribute><![CDATA[location_mapheight]]></attribute>
+    <value><![CDATA[300]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[63]]></qid>
+    <attribute><![CDATA[location_mapservice]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[63]]></qid>
+    <attribute><![CDATA[location_mapwidth]]></attribute>
+    <value><![CDATA[500]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[63]]></qid>
+    <attribute><![CDATA[location_mapzoom]]></attribute>
+    <value><![CDATA[11]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[63]]></qid>
+    <attribute><![CDATA[location_nodefaultfromip]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[63]]></qid>
+    <attribute><![CDATA[location_postal]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[63]]></qid>
+    <attribute><![CDATA[location_state]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[63]]></qid>
+    <attribute><![CDATA[maximum_chars]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[63]]></qid>
+    <attribute><![CDATA[numbers_only]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[63]]></qid>
+    <attribute><![CDATA[page_break]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[63]]></qid>
+    <attribute><![CDATA[prefix]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[63]]></qid>
+    <attribute><![CDATA[random_group]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[63]]></qid>
+    <attribute><![CDATA[save_as_default]]></attribute>
+    <value><![CDATA[N]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[63]]></qid>
+    <attribute><![CDATA[statistics_graphtype]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[63]]></qid>
+    <attribute><![CDATA[statistics_showgraph]]></attribute>
+    <value><![CDATA[1]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[63]]></qid>
+    <attribute><![CDATA[statistics_showmap]]></attribute>
+    <value><![CDATA[1]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[63]]></qid>
+    <attribute><![CDATA[suffix]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[63]]></qid>
+    <attribute><![CDATA[text_input_width]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[63]]></qid>
+    <attribute><![CDATA[time_limit]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[63]]></qid>
+    <attribute><![CDATA[time_limit_action]]></attribute>
+    <value><![CDATA[1]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[63]]></qid>
+    <attribute><![CDATA[time_limit_countdown_message]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[63]]></qid>
+    <attribute><![CDATA[time_limit_disable_next]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[63]]></qid>
+    <attribute><![CDATA[time_limit_disable_prev]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[63]]></qid>
+    <attribute><![CDATA[time_limit_message]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[63]]></qid>
+    <attribute><![CDATA[time_limit_message_delay]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[63]]></qid>
+    <attribute><![CDATA[time_limit_message_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[63]]></qid>
+    <attribute><![CDATA[time_limit_timer_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[63]]></qid>
+    <attribute><![CDATA[time_limit_warning]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[63]]></qid>
+    <attribute><![CDATA[time_limit_warning_2]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[63]]></qid>
+    <attribute><![CDATA[time_limit_warning_2_display_time]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[63]]></qid>
+    <attribute><![CDATA[time_limit_warning_2_message]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[63]]></qid>
+    <attribute><![CDATA[time_limit_warning_2_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[63]]></qid>
+    <attribute><![CDATA[time_limit_warning_display_time]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[63]]></qid>
+    <attribute><![CDATA[time_limit_warning_message]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[63]]></qid>
+    <attribute><![CDATA[time_limit_warning_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[64]]></qid>
+    <attribute><![CDATA[cssclass]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[64]]></qid>
+    <attribute><![CDATA[hidden]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[64]]></qid>
+    <attribute><![CDATA[hide_tip]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[64]]></qid>
+    <attribute><![CDATA[page_break]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[64]]></qid>
+    <attribute><![CDATA[random_group]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[64]]></qid>
+    <attribute><![CDATA[save_as_default]]></attribute>
+    <value><![CDATA[N]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[64]]></qid>
+    <attribute><![CDATA[statistics_graphtype]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[64]]></qid>
+    <attribute><![CDATA[statistics_showgraph]]></attribute>
+    <value><![CDATA[1]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[64]]></qid>
+    <attribute><![CDATA[time_limit]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[64]]></qid>
+    <attribute><![CDATA[time_limit_action]]></attribute>
+    <value><![CDATA[3]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[64]]></qid>
+    <attribute><![CDATA[time_limit_countdown_message]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[64]]></qid>
+    <attribute><![CDATA[time_limit_disable_next]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[64]]></qid>
+    <attribute><![CDATA[time_limit_disable_prev]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[64]]></qid>
+    <attribute><![CDATA[time_limit_message]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[64]]></qid>
+    <attribute><![CDATA[time_limit_message_delay]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[64]]></qid>
+    <attribute><![CDATA[time_limit_message_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[64]]></qid>
+    <attribute><![CDATA[time_limit_timer_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[64]]></qid>
+    <attribute><![CDATA[time_limit_warning]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[64]]></qid>
+    <attribute><![CDATA[time_limit_warning_2]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[64]]></qid>
+    <attribute><![CDATA[time_limit_warning_2_display_time]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[64]]></qid>
+    <attribute><![CDATA[time_limit_warning_2_message]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[64]]></qid>
+    <attribute><![CDATA[time_limit_warning_2_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[64]]></qid>
+    <attribute><![CDATA[time_limit_warning_display_time]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[64]]></qid>
+    <attribute><![CDATA[time_limit_warning_message]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[64]]></qid>
+    <attribute><![CDATA[time_limit_warning_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[65]]></qid>
+    <attribute><![CDATA[cssclass]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[65]]></qid>
+    <attribute><![CDATA[display_rows]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[65]]></qid>
+    <attribute><![CDATA[em_validation_q]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[65]]></qid>
+    <attribute><![CDATA[em_validation_q_tip]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[65]]></qid>
+    <attribute><![CDATA[hidden]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[65]]></qid>
+    <attribute><![CDATA[hide_tip]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[65]]></qid>
+    <attribute><![CDATA[input_size]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[65]]></qid>
+    <attribute><![CDATA[location_city]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[65]]></qid>
+    <attribute><![CDATA[location_country]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[65]]></qid>
+    <attribute><![CDATA[location_defaultcoordinates]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[65]]></qid>
+    <attribute><![CDATA[location_mapheight]]></attribute>
+    <value><![CDATA[300]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[65]]></qid>
+    <attribute><![CDATA[location_mapservice]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[65]]></qid>
+    <attribute><![CDATA[location_mapwidth]]></attribute>
+    <value><![CDATA[500]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[65]]></qid>
+    <attribute><![CDATA[location_mapzoom]]></attribute>
+    <value><![CDATA[11]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[65]]></qid>
+    <attribute><![CDATA[location_nodefaultfromip]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[65]]></qid>
+    <attribute><![CDATA[location_postal]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[65]]></qid>
+    <attribute><![CDATA[location_state]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[65]]></qid>
+    <attribute><![CDATA[maximum_chars]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[65]]></qid>
+    <attribute><![CDATA[numbers_only]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[65]]></qid>
+    <attribute><![CDATA[page_break]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[65]]></qid>
+    <attribute><![CDATA[prefix]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[65]]></qid>
+    <attribute><![CDATA[random_group]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[65]]></qid>
+    <attribute><![CDATA[save_as_default]]></attribute>
+    <value><![CDATA[N]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[65]]></qid>
+    <attribute><![CDATA[statistics_graphtype]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[65]]></qid>
+    <attribute><![CDATA[statistics_showgraph]]></attribute>
+    <value><![CDATA[1]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[65]]></qid>
+    <attribute><![CDATA[statistics_showmap]]></attribute>
+    <value><![CDATA[1]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[65]]></qid>
+    <attribute><![CDATA[suffix]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[65]]></qid>
+    <attribute><![CDATA[text_input_width]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[65]]></qid>
+    <attribute><![CDATA[time_limit]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[65]]></qid>
+    <attribute><![CDATA[time_limit_action]]></attribute>
+    <value><![CDATA[1]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[65]]></qid>
+    <attribute><![CDATA[time_limit_countdown_message]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[65]]></qid>
+    <attribute><![CDATA[time_limit_disable_next]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[65]]></qid>
+    <attribute><![CDATA[time_limit_disable_prev]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[65]]></qid>
+    <attribute><![CDATA[time_limit_message]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[65]]></qid>
+    <attribute><![CDATA[time_limit_message_delay]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[65]]></qid>
+    <attribute><![CDATA[time_limit_message_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[65]]></qid>
+    <attribute><![CDATA[time_limit_timer_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[65]]></qid>
+    <attribute><![CDATA[time_limit_warning]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[65]]></qid>
+    <attribute><![CDATA[time_limit_warning_2]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[65]]></qid>
+    <attribute><![CDATA[time_limit_warning_2_display_time]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[65]]></qid>
+    <attribute><![CDATA[time_limit_warning_2_message]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[65]]></qid>
+    <attribute><![CDATA[time_limit_warning_2_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[65]]></qid>
+    <attribute><![CDATA[time_limit_warning_display_time]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[65]]></qid>
+    <attribute><![CDATA[time_limit_warning_message]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[65]]></qid>
+    <attribute><![CDATA[time_limit_warning_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[66]]></qid>
+    <attribute><![CDATA[cssclass]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[66]]></qid>
+    <attribute><![CDATA[display_rows]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[66]]></qid>
+    <attribute><![CDATA[em_validation_q]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[66]]></qid>
+    <attribute><![CDATA[em_validation_q_tip]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[66]]></qid>
+    <attribute><![CDATA[hidden]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[66]]></qid>
+    <attribute><![CDATA[hide_tip]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[66]]></qid>
+    <attribute><![CDATA[input_size]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[66]]></qid>
+    <attribute><![CDATA[location_city]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[66]]></qid>
+    <attribute><![CDATA[location_country]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[66]]></qid>
+    <attribute><![CDATA[location_defaultcoordinates]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[66]]></qid>
+    <attribute><![CDATA[location_mapheight]]></attribute>
+    <value><![CDATA[300]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[66]]></qid>
+    <attribute><![CDATA[location_mapservice]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[66]]></qid>
+    <attribute><![CDATA[location_mapwidth]]></attribute>
+    <value><![CDATA[500]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[66]]></qid>
+    <attribute><![CDATA[location_mapzoom]]></attribute>
+    <value><![CDATA[11]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[66]]></qid>
+    <attribute><![CDATA[location_nodefaultfromip]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[66]]></qid>
+    <attribute><![CDATA[location_postal]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[66]]></qid>
+    <attribute><![CDATA[location_state]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[66]]></qid>
+    <attribute><![CDATA[maximum_chars]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[66]]></qid>
+    <attribute><![CDATA[numbers_only]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[66]]></qid>
+    <attribute><![CDATA[page_break]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[66]]></qid>
+    <attribute><![CDATA[prefix]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[66]]></qid>
+    <attribute><![CDATA[random_group]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[66]]></qid>
+    <attribute><![CDATA[save_as_default]]></attribute>
+    <value><![CDATA[N]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[66]]></qid>
+    <attribute><![CDATA[statistics_graphtype]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[66]]></qid>
+    <attribute><![CDATA[statistics_showgraph]]></attribute>
+    <value><![CDATA[1]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[66]]></qid>
+    <attribute><![CDATA[statistics_showmap]]></attribute>
+    <value><![CDATA[1]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[66]]></qid>
+    <attribute><![CDATA[suffix]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[66]]></qid>
+    <attribute><![CDATA[text_input_width]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[66]]></qid>
+    <attribute><![CDATA[time_limit]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[66]]></qid>
+    <attribute><![CDATA[time_limit_action]]></attribute>
+    <value><![CDATA[1]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[66]]></qid>
+    <attribute><![CDATA[time_limit_countdown_message]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[66]]></qid>
+    <attribute><![CDATA[time_limit_disable_next]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[66]]></qid>
+    <attribute><![CDATA[time_limit_disable_prev]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[66]]></qid>
+    <attribute><![CDATA[time_limit_message]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[66]]></qid>
+    <attribute><![CDATA[time_limit_message_delay]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[66]]></qid>
+    <attribute><![CDATA[time_limit_message_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[66]]></qid>
+    <attribute><![CDATA[time_limit_timer_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[66]]></qid>
+    <attribute><![CDATA[time_limit_warning]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[66]]></qid>
+    <attribute><![CDATA[time_limit_warning_2]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[66]]></qid>
+    <attribute><![CDATA[time_limit_warning_2_display_time]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[66]]></qid>
+    <attribute><![CDATA[time_limit_warning_2_message]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[66]]></qid>
+    <attribute><![CDATA[time_limit_warning_2_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[66]]></qid>
+    <attribute><![CDATA[time_limit_warning_display_time]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[66]]></qid>
+    <attribute><![CDATA[time_limit_warning_message]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[66]]></qid>
+    <attribute><![CDATA[time_limit_warning_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[67]]></qid>
+    <attribute><![CDATA[cssclass]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[67]]></qid>
+    <attribute><![CDATA[display_rows]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[67]]></qid>
+    <attribute><![CDATA[em_validation_q]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[67]]></qid>
+    <attribute><![CDATA[em_validation_q_tip]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[67]]></qid>
+    <attribute><![CDATA[hidden]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[67]]></qid>
+    <attribute><![CDATA[hide_tip]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[67]]></qid>
+    <attribute><![CDATA[input_size]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[67]]></qid>
+    <attribute><![CDATA[location_city]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[67]]></qid>
+    <attribute><![CDATA[location_country]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[67]]></qid>
+    <attribute><![CDATA[location_defaultcoordinates]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[67]]></qid>
+    <attribute><![CDATA[location_mapheight]]></attribute>
+    <value><![CDATA[300]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[67]]></qid>
+    <attribute><![CDATA[location_mapservice]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[67]]></qid>
+    <attribute><![CDATA[location_mapwidth]]></attribute>
+    <value><![CDATA[500]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[67]]></qid>
+    <attribute><![CDATA[location_mapzoom]]></attribute>
+    <value><![CDATA[11]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[67]]></qid>
+    <attribute><![CDATA[location_nodefaultfromip]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[67]]></qid>
+    <attribute><![CDATA[location_postal]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[67]]></qid>
+    <attribute><![CDATA[location_state]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[67]]></qid>
+    <attribute><![CDATA[maximum_chars]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[67]]></qid>
+    <attribute><![CDATA[numbers_only]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[67]]></qid>
+    <attribute><![CDATA[page_break]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[67]]></qid>
+    <attribute><![CDATA[prefix]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[67]]></qid>
+    <attribute><![CDATA[random_group]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[67]]></qid>
+    <attribute><![CDATA[save_as_default]]></attribute>
+    <value><![CDATA[N]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[67]]></qid>
+    <attribute><![CDATA[statistics_graphtype]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[67]]></qid>
+    <attribute><![CDATA[statistics_showgraph]]></attribute>
+    <value><![CDATA[1]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[67]]></qid>
+    <attribute><![CDATA[statistics_showmap]]></attribute>
+    <value><![CDATA[1]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[67]]></qid>
+    <attribute><![CDATA[suffix]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[67]]></qid>
+    <attribute><![CDATA[text_input_width]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[67]]></qid>
+    <attribute><![CDATA[time_limit]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[67]]></qid>
+    <attribute><![CDATA[time_limit_action]]></attribute>
+    <value><![CDATA[1]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[67]]></qid>
+    <attribute><![CDATA[time_limit_countdown_message]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[67]]></qid>
+    <attribute><![CDATA[time_limit_disable_next]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[67]]></qid>
+    <attribute><![CDATA[time_limit_disable_prev]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[67]]></qid>
+    <attribute><![CDATA[time_limit_message]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[67]]></qid>
+    <attribute><![CDATA[time_limit_message_delay]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[67]]></qid>
+    <attribute><![CDATA[time_limit_message_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[67]]></qid>
+    <attribute><![CDATA[time_limit_timer_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[67]]></qid>
+    <attribute><![CDATA[time_limit_warning]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[67]]></qid>
+    <attribute><![CDATA[time_limit_warning_2]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[67]]></qid>
+    <attribute><![CDATA[time_limit_warning_2_display_time]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[67]]></qid>
+    <attribute><![CDATA[time_limit_warning_2_message]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[67]]></qid>
+    <attribute><![CDATA[time_limit_warning_2_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[67]]></qid>
+    <attribute><![CDATA[time_limit_warning_display_time]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[67]]></qid>
+    <attribute><![CDATA[time_limit_warning_message]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[67]]></qid>
+    <attribute><![CDATA[time_limit_warning_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[68]]></qid>
+    <attribute><![CDATA[cssclass]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[68]]></qid>
+    <attribute><![CDATA[display_rows]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[68]]></qid>
+    <attribute><![CDATA[em_validation_q]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[68]]></qid>
+    <attribute><![CDATA[em_validation_q_tip]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[68]]></qid>
+    <attribute><![CDATA[hidden]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[68]]></qid>
+    <attribute><![CDATA[hide_tip]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[68]]></qid>
+    <attribute><![CDATA[input_size]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[68]]></qid>
+    <attribute><![CDATA[location_city]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[68]]></qid>
+    <attribute><![CDATA[location_country]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[68]]></qid>
+    <attribute><![CDATA[location_defaultcoordinates]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[68]]></qid>
+    <attribute><![CDATA[location_mapheight]]></attribute>
+    <value><![CDATA[300]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[68]]></qid>
+    <attribute><![CDATA[location_mapservice]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[68]]></qid>
+    <attribute><![CDATA[location_mapwidth]]></attribute>
+    <value><![CDATA[500]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[68]]></qid>
+    <attribute><![CDATA[location_mapzoom]]></attribute>
+    <value><![CDATA[11]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[68]]></qid>
+    <attribute><![CDATA[location_nodefaultfromip]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[68]]></qid>
+    <attribute><![CDATA[location_postal]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[68]]></qid>
+    <attribute><![CDATA[location_state]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[68]]></qid>
+    <attribute><![CDATA[maximum_chars]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[68]]></qid>
+    <attribute><![CDATA[numbers_only]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[68]]></qid>
+    <attribute><![CDATA[page_break]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[68]]></qid>
+    <attribute><![CDATA[prefix]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[68]]></qid>
+    <attribute><![CDATA[random_group]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[68]]></qid>
+    <attribute><![CDATA[save_as_default]]></attribute>
+    <value><![CDATA[N]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[68]]></qid>
+    <attribute><![CDATA[statistics_graphtype]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[68]]></qid>
+    <attribute><![CDATA[statistics_showgraph]]></attribute>
+    <value><![CDATA[1]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[68]]></qid>
+    <attribute><![CDATA[statistics_showmap]]></attribute>
+    <value><![CDATA[1]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[68]]></qid>
+    <attribute><![CDATA[suffix]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[68]]></qid>
+    <attribute><![CDATA[text_input_width]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[68]]></qid>
+    <attribute><![CDATA[time_limit]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[68]]></qid>
+    <attribute><![CDATA[time_limit_action]]></attribute>
+    <value><![CDATA[1]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[68]]></qid>
+    <attribute><![CDATA[time_limit_countdown_message]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[68]]></qid>
+    <attribute><![CDATA[time_limit_disable_next]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[68]]></qid>
+    <attribute><![CDATA[time_limit_disable_prev]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[68]]></qid>
+    <attribute><![CDATA[time_limit_message]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[68]]></qid>
+    <attribute><![CDATA[time_limit_message_delay]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[68]]></qid>
+    <attribute><![CDATA[time_limit_message_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[68]]></qid>
+    <attribute><![CDATA[time_limit_timer_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[68]]></qid>
+    <attribute><![CDATA[time_limit_warning]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[68]]></qid>
+    <attribute><![CDATA[time_limit_warning_2]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[68]]></qid>
+    <attribute><![CDATA[time_limit_warning_2_display_time]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[68]]></qid>
+    <attribute><![CDATA[time_limit_warning_2_message]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[68]]></qid>
+    <attribute><![CDATA[time_limit_warning_2_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[68]]></qid>
+    <attribute><![CDATA[time_limit_warning_display_time]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[68]]></qid>
+    <attribute><![CDATA[time_limit_warning_message]]></attribute>
+    <value/>
+    <language><![CDATA[en]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[68]]></qid>
+    <attribute><![CDATA[time_limit_warning_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+  </rows>
+ </question_attributes>
+ <surveys>
+  <fields>
+   <fieldname>sid</fieldname>
+   <fieldname>gsid</fieldname>
+   <fieldname>admin</fieldname>
+   <fieldname>expires</fieldname>
+   <fieldname>startdate</fieldname>
+   <fieldname>adminemail</fieldname>
+   <fieldname>anonymized</fieldname>
+   <fieldname>format</fieldname>
+   <fieldname>savetimings</fieldname>
+   <fieldname>template</fieldname>
+   <fieldname>language</fieldname>
+   <fieldname>additional_languages</fieldname>
+   <fieldname>datestamp</fieldname>
+   <fieldname>usecookie</fieldname>
+   <fieldname>allowregister</fieldname>
+   <fieldname>allowsave</fieldname>
+   <fieldname>autonumber_start</fieldname>
+   <fieldname>autoredirect</fieldname>
+   <fieldname>allowprev</fieldname>
+   <fieldname>printanswers</fieldname>
+   <fieldname>ipaddr</fieldname>
+   <fieldname>ipanonymize</fieldname>
+   <fieldname>refurl</fieldname>
+   <fieldname>showsurveypolicynotice</fieldname>
+   <fieldname>publicstatistics</fieldname>
+   <fieldname>publicgraphs</fieldname>
+   <fieldname>listpublic</fieldname>
+   <fieldname>htmlemail</fieldname>
+   <fieldname>sendconfirmation</fieldname>
+   <fieldname>tokenanswerspersistence</fieldname>
+   <fieldname>assessments</fieldname>
+   <fieldname>usecaptcha</fieldname>
+   <fieldname>usetokens</fieldname>
+   <fieldname>bounce_email</fieldname>
+   <fieldname>attributedescriptions</fieldname>
+   <fieldname>emailresponseto</fieldname>
+   <fieldname>emailnotificationto</fieldname>
+   <fieldname>tokenlength</fieldname>
+   <fieldname>showxquestions</fieldname>
+   <fieldname>showgroupinfo</fieldname>
+   <fieldname>shownoanswer</fieldname>
+   <fieldname>showqnumcode</fieldname>
+   <fieldname>bouncetime</fieldname>
+   <fieldname>bounceprocessing</fieldname>
+   <fieldname>bounceaccounttype</fieldname>
+   <fieldname>bounceaccounthost</fieldname>
+   <fieldname>bounceaccountpass</fieldname>
+   <fieldname>bounceaccountencryption</fieldname>
+   <fieldname>bounceaccountuser</fieldname>
+   <fieldname>showwelcome</fieldname>
+   <fieldname>showprogress</fieldname>
+   <fieldname>questionindex</fieldname>
+   <fieldname>navigationdelay</fieldname>
+   <fieldname>nokeyboard</fieldname>
+   <fieldname>alloweditaftercompletion</fieldname>
+   <fieldname>googleanalyticsstyle</fieldname>
+   <fieldname>googleanalyticsapikey</fieldname>
+   <fieldname>tokenencryptionoptions</fieldname>
+  </fields>
+  <rows>
+   <row>
+    <sid><![CDATA[576394]]></sid>
+    <gsid><![CDATA[1]]></gsid>
+    <admin><![CDATA[inherit]]></admin>
+    <adminemail><![CDATA[inherit]]></adminemail>
+    <anonymized><![CDATA[Y]]></anonymized>
+    <format><![CDATA[S]]></format>
+    <savetimings><![CDATA[Y]]></savetimings>
+    <template><![CDATA[fruity_twentythree]]></template>
+    <language><![CDATA[en]]></language>
+    <additional_languages/>
+    <datestamp><![CDATA[N]]></datestamp>
+    <usecookie><![CDATA[I]]></usecookie>
+    <allowregister><![CDATA[I]]></allowregister>
+    <allowsave><![CDATA[I]]></allowsave>
+    <autonumber_start><![CDATA[1]]></autonumber_start>
+    <autoredirect><![CDATA[I]]></autoredirect>
+    <allowprev><![CDATA[I]]></allowprev>
+    <printanswers><![CDATA[Y]]></printanswers>
+    <ipaddr><![CDATA[Y]]></ipaddr>
+    <ipanonymize><![CDATA[Y]]></ipanonymize>
+    <refurl><![CDATA[Y]]></refurl>
+    <showsurveypolicynotice><![CDATA[0]]></showsurveypolicynotice>
+    <publicstatistics><![CDATA[I]]></publicstatistics>
+    <publicgraphs><![CDATA[I]]></publicgraphs>
+    <listpublic><![CDATA[Y]]></listpublic>
+    <htmlemail><![CDATA[I]]></htmlemail>
+    <sendconfirmation><![CDATA[I]]></sendconfirmation>
+    <tokenanswerspersistence><![CDATA[Y]]></tokenanswerspersistence>
+    <assessments><![CDATA[I]]></assessments>
+    <usecaptcha><![CDATA[E]]></usecaptcha>
+    <usetokens><![CDATA[N]]></usetokens>
+    <bounce_email><![CDATA[inherit]]></bounce_email>
+    <emailresponseto><![CDATA[inherit]]></emailresponseto>
+    <emailnotificationto><![CDATA[inherit]]></emailnotificationto>
+    <tokenlength><![CDATA[-1]]></tokenlength>
+    <showxquestions><![CDATA[N]]></showxquestions>
+    <showgroupinfo><![CDATA[I]]></showgroupinfo>
+    <shownoanswer><![CDATA[I]]></shownoanswer>
+    <showqnumcode><![CDATA[I]]></showqnumcode>
+    <bounceprocessing><![CDATA[N]]></bounceprocessing>
+    <showwelcome><![CDATA[I]]></showwelcome>
+    <showprogress><![CDATA[Y]]></showprogress>
+    <questionindex><![CDATA[-1]]></questionindex>
+    <navigationdelay><![CDATA[-1]]></navigationdelay>
+    <nokeyboard><![CDATA[I]]></nokeyboard>
+    <alloweditaftercompletion><![CDATA[Y]]></alloweditaftercompletion>
+    <googleanalyticsstyle><![CDATA[0]]></googleanalyticsstyle>
+    <googleanalyticsapikey/>
+    <tokenencryptionoptions><![CDATA[{ "enabled":"Y","columns":{ "firstname":"N","lastname":"N","email":"N" } }]]></tokenencryptionoptions>
+   </row>
+  </rows>
+ </surveys>
+ <surveys_languagesettings>
+  <fields>
+   <fieldname>surveyls_survey_id</fieldname>
+   <fieldname>surveyls_policy_error</fieldname>
+   <fieldname>surveyls_email_invite_subj</fieldname>
+   <fieldname>surveyls_email_invite</fieldname>
+   <fieldname>surveyls_email_remind_subj</fieldname>
+   <fieldname>surveyls_email_remind</fieldname>
+   <fieldname>surveyls_email_register_subj</fieldname>
+   <fieldname>surveyls_email_register</fieldname>
+   <fieldname>surveyls_email_confirm_subj</fieldname>
+   <fieldname>surveyls_email_confirm</fieldname>
+   <fieldname>surveyls_dateformat</fieldname>
+   <fieldname>surveyls_attributecaptions</fieldname>
+   <fieldname>surveyls_alias</fieldname>
+   <fieldname>email_admin_notification_subj</fieldname>
+   <fieldname>email_admin_notification</fieldname>
+   <fieldname>email_admin_responses_subj</fieldname>
+   <fieldname>email_admin_responses</fieldname>
+   <fieldname>surveyls_numberformat</fieldname>
+   <fieldname>attachments</fieldname>
+   <fieldname>surveyls_language</fieldname>
+   <fieldname>surveyls_title</fieldname>
+   <fieldname>surveyls_description</fieldname>
+   <fieldname>surveyls_welcometext</fieldname>
+   <fieldname>surveyls_endtext</fieldname>
+   <fieldname>surveyls_policy_notice</fieldname>
+   <fieldname>surveyls_policy_notice_label</fieldname>
+   <fieldname>surveyls_url</fieldname>
+   <fieldname>surveyls_urldescription</fieldname>
+  </fields>
+  <rows>
+   <row>
+    <surveyls_survey_id><![CDATA[576394]]></surveyls_survey_id>
+    <surveyls_policy_error/>
+    <surveyls_email_invite_subj><![CDATA[Invitation to participate in a survey]]></surveyls_email_invite_subj>
+    <surveyls_email_invite><![CDATA[Dear {FIRSTNAME},<br />
+<br />
+You have been invited to participate in a survey.<br />
+<br />
+The survey is titled:<br />
+"{SURVEYNAME}"<br />
+<br />
+"{SURVEYDESCRIPTION}"<br />
+<br />
+To participate, please click on the link below.<br />
+<br />
+Sincerely,<br />
+<br />
+{ADMINNAME} ({ADMINEMAIL})<br />
+<br />
+----------------------------------------------<br />
+Click here to do the survey:<br />
+{SURVEYURL}<br />
+<br />
+If you do not want to participate in this survey and don't want to receive any more invitations please click the following link:<br />
+{OPTOUTURL}<br />
+<br />
+If you are blocklisted but want to participate in this survey and want to receive invitations please click the following link:<br />
+{OPTINURL}]]></surveyls_email_invite>
+    <surveyls_email_remind_subj><![CDATA[Reminder to participate in a survey]]></surveyls_email_remind_subj>
+    <surveyls_email_remind><![CDATA[Dear {FIRSTNAME},<br />
+<br />
+Recently we invited you to participate in a survey.<br />
+<br />
+We note that you have not yet completed the survey, and wish to remind you that the survey is still available should you wish to take part.<br />
+<br />
+The survey is titled:<br />
+"{SURVEYNAME}"<br />
+<br />
+"{SURVEYDESCRIPTION}"<br />
+<br />
+To participate, please click on the link below.<br />
+<br />
+Sincerely,<br />
+<br />
+{ADMINNAME} ({ADMINEMAIL})<br />
+<br />
+----------------------------------------------<br />
+Click here to do the survey:<br />
+{SURVEYURL}<br />
+<br />
+If you do not want to participate in this survey and don't want to receive any more invitations please click the following link:<br />
+{OPTOUTURL}]]></surveyls_email_remind>
+    <surveyls_email_register_subj><![CDATA[Survey registration confirmation]]></surveyls_email_register_subj>
+    <surveyls_email_register><![CDATA[Dear {FIRSTNAME},<br />
+<br />
+You, or someone using your email address, have registered to participate in an online survey titled {SURVEYNAME}.<br />
+<br />
+To complete this survey, click on the following URL:<br />
+<br />
+{SURVEYURL}<br />
+<br />
+If you have any questions about this survey, or if you did not register to participate and believe this email is in error, please contact {ADMINNAME} at {ADMINEMAIL}.]]></surveyls_email_register>
+    <surveyls_email_confirm_subj><![CDATA[Confirmation of your participation in our survey]]></surveyls_email_confirm_subj>
+    <surveyls_email_confirm><![CDATA[Dear {FIRSTNAME},<br />
+<br />
+This email is to confirm that you have completed the survey titled {SURVEYNAME} and your response has been saved. Thank you for participating.<br />
+<br />
+If you have any further questions about this email, please contact {ADMINNAME} on {ADMINEMAIL}.<br />
+<br />
+Sincerely,<br />
+<br />
+{ADMINNAME}]]></surveyls_email_confirm>
+    <surveyls_dateformat><![CDATA[1]]></surveyls_dateformat>
+    <surveyls_alias/>
+    <email_admin_notification_subj><![CDATA[Response submission for survey {SURVEYNAME}]]></email_admin_notification_subj>
+    <email_admin_notification><![CDATA[Hello,<br />
+<br />
+A new response was submitted for your survey '{SURVEYNAME}'.<br />
+<br />
+Click the following link to see the individual response:<br />
+{VIEWRESPONSEURL}<br />
+<br />
+Click the following link to edit the individual response:<br />
+{EDITRESPONSEURL}<br />
+<br />
+View statistics by clicking here:<br />
+{STATISTICSURL}]]></email_admin_notification>
+    <email_admin_responses_subj><![CDATA[Response submission for survey {SURVEYNAME} with results]]></email_admin_responses_subj>
+    <email_admin_responses><![CDATA[Hello,<br />
+<br />
+A new response was submitted for your survey '{SURVEYNAME}'.<br />
+<br />
+Click the following link to see the individual response:<br />
+{VIEWRESPONSEURL}<br />
+<br />
+Click the following link to edit the individual response:<br />
+{EDITRESPONSEURL}<br />
+<br />
+View statistics by clicking here:<br />
+{STATISTICSURL}<br />
+<br />
+<br />
+The following answers were given by the participant:<br />
+{ANSWERTABLE}]]></email_admin_responses>
+    <surveyls_numberformat><![CDATA[1]]></surveyls_numberformat>
+    <surveyls_language><![CDATA[en]]></surveyls_language>
+    <surveyls_title><![CDATA[Metric Survey B]]></surveyls_title>
+    <surveyls_description/>
+    <surveyls_welcometext><![CDATA[<p><strong>Welcome to Our Study on Program Code Complexity (Metrics)</strong></p>
+
+<p>Thank you for taking the time to participate in this study!</p>
+
+<p>The survey should take approximately 45-60 minutes to complete.</p>
+]]></surveyls_welcometext>
+    <surveyls_endtext><![CDATA[<p><strong>Thank You for Your Participation!</strong></p>
+
+<p>We greatly appreciate the time and effort you’ve dedicated to completing this survey.</p>
+
+<h3>What Happens Next?</h3>
+
+<p>We will now analyze the collected data, and your responses will play a key role in shaping our final conclusions. If you're interested in the outcomes of this research or wish to learn more about the findings, please feel free to get in contact with us directly.</p>
+]]></surveyls_endtext>
+    <surveyls_policy_notice/>
+    <surveyls_policy_notice_label><![CDATA[https://www.fraunhofer.de/en/data-protection-policy.html]]></surveyls_policy_notice_label>
+    <surveyls_url/>
+    <surveyls_urldescription/>
+   </row>
+  </rows>
+ </surveys_languagesettings>
+ <themes>
+  <theme>
+   <sid>576394</sid>
+   <template_name>fruity_twentythree</template_name>
+   <config>
+    <options>
+     <font>inherit</font>
+     <cssframework>inherit</cssframework>
+     <backgroundimagefile>inherit</backgroundimagefile>
+     <brandlogofile>inherit</brandlogofile>
+     <hideprivacyinfo>inherit</hideprivacyinfo>
+     <showpopups>inherit</showpopups>
+     <showclearall>inherit</showclearall>
+     <questionhelptextposition>inherit</questionhelptextposition>
+     <fixnumauto>inherit</fixnumauto>
+     <backgroundimage>inherit</backgroundimage>
+     <brandlogo>inherit</brandlogo>
+    </options>
+   </config>
+  </theme>
+ </themes>
+ <themes_inherited>
+  <theme>
+   <sid>576394</sid>
+   <template_name>fruity_twentythree</template_name>
+   <config>
+    <options>
+     <font>ibm-sans</font>
+     <cssframework>Apple</cssframework>
+     <backgroundimagefile>./files/pattern.png</backgroundimagefile>
+     <brandlogofile>image::theme::files/logo.png</brandlogofile>
+     <hideprivacyinfo>off</hideprivacyinfo>
+     <showpopups>1</showpopups>
+     <showclearall>off</showclearall>
+     <questionhelptextposition>top</questionhelptextposition>
+     <fixnumauto>enable</fixnumauto>
+     <backgroundimage>off</backgroundimage>
+     <brandlogo>off</brandlogo>
+    </options>
+   </config>
+  </theme>
+ </themes_inherited>
+</document>

@@ -1,0 +1,109 @@
+﻿"Response ID","Date submitted","Last page","Start language","Seed","IP address","Referrer URL","    If everything is clear, please continue. ","Ignoring the specific values in input, what is the valid ASCII value range of characters that output can contain after the function returned?","Which input characters can potentially affect output[0]? Use this example to explain how the dependency works in general (for output[n])?","What is the maximum number of times the function foo is invoked during program execution? Which values can the argument of foo have if the function is called? Explain why.","Under the assumption that each character in the input contains only printable ASCII characters (ASCII codes 33 to 126), does the function always terminate? Explain why.","    If everything is clear, please continue. ","Ignoring the specific values in input, what is the valid ASCII value range of characters that output can contain after the function returned 0?","Assuming the function was executed with input_len=L, how many characters are written to output? output_len is no valid answer.","Which input characters can potentially affect output[0]? Use this example to explain how the dependency works in general (for output[n])?","Under what conditions involving input and input_len is the character 'X' printed? Additionally, what is the maximum number of times 'X' can be printed? Explain why.","Total time","Group time: Sample 1B","Question time: S1Bcode","Question time: S1Bq1","Question time: S1Bq2","Question time: S1Bq3","Question time: S1Bq4","Group time: Sample 2B","Question time: S2Bcode","Question time: S2Bq1","Question time: S2Bq2","Question time: S2Bq3","Question time: S2Bq4"
+"1","1980-01-01 00:00:00","10","en","463276474","2a01:599:301:0:0:0:0:0","https://limesurvey.ndrs.ovh/","","62 to 100 from first if branch, 80-122 from else branch, so 62-122 in total.","The output offset is initially set on the ""middle"" (input_len / 2) of the input string, then walks forward in increments of 1, reset to 0 when reaching the end of the string due to the modulo operation (input[source_offset % input_len]). Thus, the char at input[input_len / 2] affects output[0]. Additionally, output_value += input[(output_offset + var_6) % input_len]; may affect output[0], which would be input[0] due to initialization.","Due to the range check with >150 and <60, foo will always be called with a value between 60-150 (inclusively). Technically the range check can be executed 3 times per input char but I don't know if an input char sequence exists that will sufficiently often increase output_value to be within the target range for every input char.","in a string only consisting of lowest values, there may be a risk that the lower range value check sends us into an infinite loop.","","output values should have the range [35-39, 41-121].","Only loop_count_max_8 is used as an offset to write to output, loop_count_max_8 is only affected by loop_count_max_8++; and the loop should only exit on the while condition while (loop_count_max_8 < 8) with no break instructions, which suggests  output has a constant length of 8, if L>=1, 0 otherwise.","output_len is never checked and influences how the while loop starting at line 27 processes input strings. with output_len=0 we may instantly enter an infinite loop, choosing 1 will result in all input chars contributing to var_5, which ultimately affects output[0]. The behavior and use of input chars per output char heavily depends on output_len.","input has no influence on whether X is printed or not, only input_len and the current loop count. input_len has to be 1 or above to reach this part in the function. As the loop is iterated at most 8 times, the number of X printed should be (8 - input_len), maximum 7 times.","3254.24",,"53.52","207.8","615.6","722.96","292.94",,"45.95","469.86","302.68","330.4","212.53"
+"2","1980-01-01 00:00:00","10","en","1567380542","129.233.182.0","https://limesurvey.ndrs.ovh/","","if var_1 is even, output can range from 80 (""P"") to 80 + 43 = 123 (""{"") and if var_1 is even, output can range from 62 ("">"") to 62 + 39 = 101 (""e""). Combined, it is 62 ("">"") to 123 (""{"").","var_5 = var_3 / 3 = (input[var_2 % input_len]) / 3 = (input[input_len / 2 % input_len]) / 3 = input[input_len] / 3 > 150 cannot occur for the first iteration and will go to Label 4, so var_3 is only affected from the middle of input (the char depends on whether the length is even or odd). 
+In label 4 and 5, the first 3 characters from input can affect var_3.
+Then var 1 and 2 are increased by 1, so the window that affects the output will shift forward.","We reach label 6 only if var_5 is between 60 and 150. var_5 is only increased, never decreased. var_3 is increased by the byte value of individual characters in input. Byte values can range from 0 to 256 and var_5 = var_3 / 3. Time is over.","time is over.","","in the very specific case that we reach line 43, output will be 35 (""#""). Otherwise it will be between 74 (""J"") and 74 + 48 = 122 (""z"").","if L = 0: 0. Otherwise, i starts at 0 and is always increased by 1 and the loop will continue until it reaches 8. Output is written to output[i], so it should have the length 8 (from index 0 to 7).","output[i] depends on var_5 and var_5 depends on j. j depends on i (ranges from 0 to 7) and output_len (probably 8). Therefore, output[i] can be affected by input[i] and all x that satisfy i = x % output_len, so every output_len'th character in input.","since j is set to i and i can range between 0 and 7, and the ""X"" is printed in line 13, it is only printed when input_len <= 7.
+If input_len is 1, ""X"" will be printed every time j >= 1, so 7 times. This is the maximum number (because if input_len is larger, it will be printed fewer times)","3497.77",,"38.48","559.06","903.94","374.33","27.96",,"19.36","431.03","232.89","564.01","346.71"
+"3","1980-01-01 00:00:00","10","en","1629477393","129.233.182.0","https://limesurvey.ndrs.ovh/","","I would go by the out parameter, and resolve by going upwards.
+var_1 % 2 makes always 0, so I take the if branch, because (var_1 % 2 == 0) results is TRUE.
+but I have to resolve var3 upwards, which seems rather impossible. var3 is a char, and can overflow (for example in line 39). A uchar can have any value between 0 and 255.
+however, 0 % 39 + 62 = 0. That makes one possible range.
+1 % 39 makes 1. that would be make 63.
+39 % 39 makes 0, that would make 62.
+40 % 39 makes 1, that would make 63. 
+41 % 39 would make 2, that would result in 64.
+So I guess I'd have to find out what can result from this modulo operation, but I think I am out of time.","Okay, if (var_1 % 2 == 0)  always evals to TRUE. 
+It'  output[var_1] = var_3 % 39 + 62;
+
+I try to resolve manually var_3 by going from bottom to top. That's going to be AWFUL.
+
+Definitely input[0] is going to affect var_3:
+var_3 -= input[var_1]; 
+
+In the other case, too. 
+
+Input length wasn't asked.
+
+Concerning input, only input[0] affects output.","I spend too much time even finding foo.
+Then I saw var_5, I was thinking if var_5 could overflow... time over.","time over.","","I go to the bottom by output and resolve upwards, generally. 
+However, there is some term xxx % 74 + 48. I don't know yet what xxx can assume as values. 
+output[var_1] is output[0], any byte between 0 and 255 could be inside. var_5 = input[var_6] must be assumed as any byte between 0 and 255. There can be overflow, so at first, without looking at the rest, anything + anything also makes anything.
+
+I do not know what ranges could result from x % 74 + 48.
+x % 74 + 48 makes 0+48. 
+x = 74 makes 0+48, too.
+x = 73 makes 73+48.
+x = 75 makes 1+48.
+
+Probably no greater value than 73 can result by x, so the greatest value could possibly be 73+48=121.
+The smallest value is 0+48, so 48.
+Possibly ranges would be 48 - 121.","If input_len L is less than 1, zero characters are written. ;-p
+Also, f(var_6 >= input_len){ is always 0, except the first case that input_len is < 1, which we already had.
+
+Anyway, aat line 36, output[0] = var_5 % 256;
+
+One character is written here. (no matter the do/while loop).
+
+Same in 43: output[0] -= 5;
+
+One character is written. (If inputlen L > 1).
+Otherwise no character is written at all.","The first character (input[0]) only.
+If I didn't oversee anything this questions was much too simple?","I mentioned this already in task 1.
+If input Length L is 0 (< 1), it returns directly. No X is printed.
+
+0 >= 0 = TRUE, but was already taken, so no. Never comes here.
+0 >= 1 = FALSE
+0 >= anything = FALSE.
+
+So the second term
+if(var_6 >= input_len)
+{
+            printf(""X"");
+}
+
+can never happen at all.
+
+I don't see how X can be printed at all!","3603.77",,"10.23","1296.8","398.68","182.27","6.08",,"15.5","677.6","408.27","199.68","408.66"
+"4","1980-01-01 00:00:00","10","en","96316423","129.233.182.0","https://limesurvey.ndrs.ovh/index.php/","","Either between 62 and 100, or 80 and 123 (not exclusively, per character)","For output[0], it's (probably) input[0], [1], [2] and [input_len / 2]. For  output[n] it's input[0+n], [1+n], [2+n], [(input_len / 2) + n] (omitted the % input_len everywhere)","Executed a maximum of input_len * 2 times. Limited by var_4 < 2, which is increased by 1 after every execution of foo() and only reset when we move on to the next character. It is only called with values between 60 and 150","Function only terminates when we iterated over every char in output (out_index > input_len). out_index is only increased in LABEL_7, which is only ""called"" when:
+
+a) var_5 > 150.
+var_3 is the sum of at most three input characters, and since var_5 = var_3 / 3 and input characters are all <126, this path is never taken
+
+b) Out of time ","","range should be
+[48, 122], but 35 is also possible","while(cur_index < 8), we'll always return when we leave this.
+Per loop, we only write once to output (at the end), and then we increase cur_index. So unless im blind, we always write 8 characters in ouput?","for out[0], its input[0] and then every output_len'th character in input. For out[n], it's... the same? var_6 is kept in bound by the stuff in lines 12-19, but since our cur_index is always <8, if we ever hit that check, we'll immediately exit the while loop later on (since our input_len is so small), so we'll only use out[n]","X can be printed a maximum of 7 times - our outer loop runs 8 times, we have no jumps or anything, and X gets printed if our current index is >= the input length. This cant happen on the first loop, because then the index is 0 and our input_len must be at least 1, otherwise we would return -1","3167.78",,"43.99","435.45","517.13","303.18","530.17",,"5.58","478.89","247.34","404.83","201.22"
+"5","1980-01-01 00:00:00","10","en","50754057","129.233.182.0","https://limesurvey.ndrs.ovh/index.php/576394","","If input len is negative output is not initialized, thus can contain any character.
+Otherwise, when written the output is either in the range of [80, 80 + 42] or [62, + 38].","input_len/2 and 0, 1, 2 mod input_len","The call to foo is guarded by an if condition and a variable that is initialized to 0, then it is incremented on each call too foo and checked against 2. Hence foo is called a maximum 2 times per character of the input buffer.
+The values it is called with are first divided by 3 and lower bounded by 60, hence in the range 60 to 255/3 and on the subsequent call the value is only divided by 2 and then checked in both directions by 60 and 150.","No, the loop that runs 3 times and adjusts the bytes read from the input may add up to 0. 
+
+In this case, the it will go into label_4 again and again.","","The output is either in the range [48, 48 + 73] or in the range [35, 112] with the exception of 40.
+","Always exactly 8 bytes are written to the output buffer. Not depending on input_length or output length. Because of how the outer loop works.","output[0] is affected by input[0] and then each byte with stride output_len.
+For subsequent bytes if works the same until the output_buffer is bigger than the input_buffer then only one byte is affecting the output. Done through the modulo calculation.","With a one byte input buffer the fist condition in the loop is true 7 times and therefore the X will be printed 7 times. That is the maximum because the function checks for a one byte input buffer at the start.","3300.71",,"19.26","405.84","403.73","578.89","602.88",,"6.15","350.42","172.93","501.47","259.14"
+"6","1980-01-01 00:00:00","10","en","1707592060","129.233.182.0","https://limesurvey.ndrs.ovh/index.php","","62-80","i don't know","3 Times. 60-150. Because at LABEL_3 var_5 is checked to be between those values. If not, a different path is taken.","No Time left :(","","48-122","I don't know.","I don't know","I don't know.","3506.89",,"46.78","490.12","496.61","721.28","98.88",,"101.07","403.73","285.04","444.71","418.67"
+"7","1980-01-01 00:00:00","10","en","656608324","129.233.182.0","https://limesurvey.ndrs.ovh/","","I have no idea.","I still have no idea what is going on.
+","My time is up :-(","Time for this sample is exceeded :-(","","output[i] is set to var_5 % 256 => output[i] can be max. 255. However, if output[i] is > 100, there are various computations that make output[i] smaller. Only if it is <= 100 these computations are not executed. Hence, the valid range is [0-100].","I assume that L is >= 0. The number of chars written to output is independent of L. Note: I considered the number of time a char is written to output regardless of the value of i in output[i].","output[i] depends on the loop var and is 0 only in the first iteration. The input char depends on var_6, which is 0 in the first round. If input_len is > 0 then var_6 is not modified in the first if block and is still 0 when the while loop is reached. And now I'm confused, because I think that we will get stuck in this loop... Maybe I missed sth. but my time is running out...","First, my time is running out. Second, I unfortunately deleted the print while answering the first question and I can't remember where is was. Sorry!","4057.81",,"16.64","1054.84","856.37","107.32","23.95",,"4.85","758.27","229.47","944.63","61.47"
+"8","1980-01-01 00:00:00","10","en","1821044541","129.233.182.0","https://limesurvey.ndrs.ovh/index.php/","","[g, z]","For char 0: 0, j%input_len, 1/2 input_len
+Chars: n, n%input_len, (n+j)%input_len, m % input_len, m = 1/2 input_len","don't know, once? takes argument between (60, 150)","time is over","","[’0’ - y]","8","i, i%(2*L), i%(2*L)-L
+i.e. out[i] = {in[i], in[ i%(2*L)], in[i%(2*L)-L]}","if input_len>i, i is [0, 8), dunno would go with 6, since i takes max 8 iterations,  and I assume input to take at least one character. Ok, then max = 8-input_len times","3304.48",,"18.86","648.61","845.14","308.45","29.14",,"19.51","247.18","303.2","492.02","392.37"
+"9","1980-01-01 00:00:00","10","en","713558267","129.233.182.0","https://limesurvey.ndrs.ovh/index.php/","","The modulo operations on var_3 are the only relevant operations, hence the valid ASCII range depends on the char position. On even positions (0, 2, ...) the range is from 62 ('>') to 100 ('d'), inclusive, and on odd positions, the range is from 80 ('P') to 122 ('z'), inclusive.","output[0] depends on input[len(input)/2], input[len(input)/2+1], input[len(input)/2+2], and input[0]. In general:
+
+output[n] depends on input[n], input[(len(input)/2 + n) % len(input)], input[(len(input)/2 + n + 1) % len(input)] and input[(len(input)/2 + n + 2) % len(input)]","foo is called a maximum of 3*len(input) times, since var_4 is guarding its execution. var_4 is initialized with 0. If it is changed at all, this var is incremented by one and the foo-loop is stopped when var_4 > 2. This is then looped len(input) times resulting in maximum foo calls of 3*len(input).
+var_5 (the foo argument) is always in the range [0, 127] because the unsigned char can only be in [0, 255] and is at best divided by 2.","out of time","","Each output char can be in one of the ranges [0, 112] without {110, 111} or [48, 121] depending on the branch of var_8, leading to a final possible range of values of [0, 121].","There are always 8 characters written to output, regardless of the input length. The outer while loop continues as long as out_i < 8. out_it is initialized with 0 and always incremented by 1 in each loop.","output[0] depends on input[0] and k times input[0 + k*len(output)] as long as k*len(output) < len(input)
+
+The general case is best described in a couple of sub-cases:
+
+Case 1 with len(output) < len(input):
+output[n] depends on input[n] and k times input[n + k*len(output)] as long as n + k*len(output) < len(input)
+
+Case 2 with len(output) > len(input):
+
+output[n] depends on input[n % len(input)]. Lines 14 to 19 are effectively a complicated `var_3 = in_i % input_len`
+
+","""X"" is printed when the input_len is smaller than the output_len. It is printed exactly (output_len - input_len) times.","3574.19",,"13.18","541.68","834.15","467.9","21.58",,"5.26","816","197.85","603.25","73.34"
+"10","1980-01-01 00:00:00","10","en","2014760655","129.233.182.0","https://limesurvey.ndrs.ovh/","","I have no idea.","I don't know. Obviously, input[0] can influence it and input[input_len % 2]. But I can't figure out the concrete value ranges.","foo can be called at max 3 times due to the condition in line 30. var_4 is initially 0 and incremented in line 34 before the jump back to LABEL_3. 
+
+Due to the checks in line 13 and 16, the argument of foo can be between 60 and 150. Although I'm not sure about 60 because of LABEL_4 and LABEL_5","I would say no because var_5 becomes smaller and smaller with line 11 and together with  the gotos in line 24 and 28 and the if condition in line 60, this would lead to an endless loop.","","Considering line 54, the valid ASCII range of characters that output can contain is from 0 (48 in decimal) to y (decimal 121)","it should be at most 8 characters","I don't know","The maximum number of times that X is printed should be 7 due to the check in line 12 together with the do-while-loop-condition.","3529.12",,"43.83","542.15","814.33","398.31","290.69",,"3.12","730.4","190.18","338.05","178.06"
+"11","1980-01-01 00:00:00","10","en","68006680","129.233.182.0","https://limesurvey.ndrs.ovh/","","Output can contain ASCII Characters between 62(>) and 122(z).","I don't know.","The Arguments can have Values from the Interval [61;150]. The reason are the two if-Statements in Line 13 and 16 which are directing the Control Flow in other directions, if var_5 is not in this Interval. Only after having checked if this is the Case, LABEL_6 is being jumped to. Var_5 is the only argument for foo. This is the only place in the Program that LABEL_5 is jumped to.
+Foo is called at max 2 times, because we only jump to LABEL_3 from Line 37. The only way, in which the jump is not being executed is, if the IF-Statement in Line 30 is triggered which happens if var_4 >2. var_4 is only incremented by one in Line 34. Its initial Value is set to 0 in Line 9.","Yes the function does always terminate. The variables deciding if we return are not influenced by the input directly, only by its length. var_1 is incremented by one for every inputcharacter. After that the function jumps to LABEL_8 and returns.","","The maximum value that output can contain is 121 (y). The minimum Value output can contain is 1.","After the program has returned 0, there are a total of 8 newly written characters in the output array.","Output[0] is influenced by input[0] and all following Characters an the Indices x = counter + output_len * j with j in N.
+So output[n] is influenced by input[n] and input[z] with z = counter + output_len * j with j in N.","""X"" can be printed at max 7 times, bc input_len is at least 1. In every following Iteration the counter can be >= input_len (If-Statement in Line 12). Therefore the maximum amount ""X"" can be printed is 7.
+""X"" is printed in Iteration x of the while-Loop, if x-1 >= input_len","4043.79",,"47.78","326.18","298.22","1035.9","341.06",,"10.69","514.5","252.77","680.12","536.57"
