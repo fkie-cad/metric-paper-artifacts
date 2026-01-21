@@ -405,10 +405,10 @@
     int var_1 = 0;
     int var_2 = input_len / 2;
 LABEL_1:
-    if (var_1 > input_len){
+    if (var_1 >= input_len){
         goto LABEL_8;
     }
-    unsigned char var_3 = input[var_2 % input_len];
+    int var_3 = input[var_2 % input_len];
     int var_4 = 0;
 LABEL_2:
     int var_5 = var_3 / 3;
